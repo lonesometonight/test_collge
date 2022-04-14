@@ -4,7 +4,7 @@
 Author: user
 Date: 2022-04-13 23:02:01
 LastEditors: user
-LastEditTime: 2022-04-13 23:12:56
+LastEditTime: 2022-04-14 12:53:56
 Descripttion: 
 '''
 import sys
@@ -21,6 +21,10 @@ import Ui_tu_jiemian
 
 import lahezha as lhz 
 import pandas as pd
+# git config --global user.name 'lonesometonight'
+# git config --global user.email '1789400639@qq.com'
+# https://github.com/lonesometonight/test_collge.git
+
 
 class my_lhz(QDialog, Ui_Dialog):
     def __init__(self,inputfile):
