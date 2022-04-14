@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>892</width>
-    <height>578</height>
+    <width>1060</width>
+    <height>835</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>20</x>
      <y>10</y>
-     <width>851</width>
-     <height>541</height>
+     <width>971</width>
+     <height>751</height>
     </rect>
    </property>
    <property name="sizeIncrement">
@@ -34,19 +34,19 @@
     </font>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab">
     <attribute name="title">
-     <string>原始数据</string>
+     <string>拉合闸</string>
     </attribute>
     <widget class="QGroupBox" name="groupBox">
      <property name="geometry">
       <rect>
        <x>30</x>
-       <y>140</y>
-       <width>391</width>
-       <height>331</height>
+       <y>180</y>
+       <width>571</width>
+       <height>561</height>
       </rect>
      </property>
      <property name="title">
@@ -61,7 +61,7 @@
      </font>
     </property>
     <attribute name="title">
-     <string>数据清洗</string>
+     <string>用电量</string>
     </attribute>
     <widget class="QGroupBox" name="groupBox_2">
      <property name="geometry">
@@ -79,7 +79,7 @@
    </widget>
    <widget class="QWidget" name="tab_3">
     <attribute name="title">
-     <string>机器学习</string>
+     <string>电压三相</string>
     </attribute>
    </widget>
   </widget>

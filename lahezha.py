@@ -4,7 +4,7 @@
 Author: user
 Date: 2022-04-13 19:20:04
 LastEditors: user
-LastEditTime: 2022-04-13 19:20:04
+LastEditTime: 2022-04-13 21:11:47
 Descripttion: 
 '''
 #!/usr/bin/env python
@@ -205,11 +205,13 @@ def draw_lof_lahezha(after_lof_data,value_yichang=380):
     sort_after_lof_data.loc[sort_after_lof_data['z_score']>= sort_after_lof_data.iloc[value_yichang, 5], 'class'] = 0
     sort_after_lof_data.loc[sort_after_lof_data['z_score'] < sort_after_lof_data.iloc[value_yichang, 5], 'class'] = 1
     # 9.2、绘图
-    plt.title("LOF")
-    plt.scatter(sort_after_lof_data['times'][:value_yichang],sort_after_lof_data['aver'][:value_yichang], color='r', label="inliner")
-    plt.scatter(sort_after_lof_data['times'][value_yichang:],sort_after_lof_data['aver'][value_yichang:], color='g', label="outliner")
-    plt.legend()
-    plt.show()
+    # plt.title("LOF")
+    # plt.scatter(sort_after_lof_data['times'][:value_yichang],sort_after_lof_data['aver'][:value_yichang], color='r', label="inliner")
+    # plt.scatter(sort_after_lof_data['times'][value_yichang:],sort_after_lof_data['aver'][value_yichang:], color='g', label="outliner")
+    # plt.legend()
+    # plt.show()
+    
+    return [sort_after_lof_data,value_yichang]
     # print("9、处理相关值并且绘图\n")
     
 def show_yichang(after_lof_data,value_yichang=380):

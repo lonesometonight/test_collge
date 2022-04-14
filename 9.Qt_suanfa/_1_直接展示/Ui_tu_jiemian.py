@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'd:\1_kaoyan\college_ending\college_ending_code\9.Qt_suanfa\_0_qt_jvhe\jie_mian.ui'
+# Form implementation generated from reading ui file 'd:\1_kaoyan\college_ending\college_ending_code\9.Qt_suanfa\_1_直接展示\tu_jiemian.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -14,28 +14,24 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(1060, 835)
+        Dialog.resize(1270, 759)
         self.tabWidget = QtWidgets.QTabWidget(Dialog)
-        self.tabWidget.setGeometry(QtCore.QRect(20, 10, 971, 751))
-        self.tabWidget.setSizeIncrement(QtCore.QSize(0, 0))
+        self.tabWidget.setGeometry(QtCore.QRect(40, 130, 1141, 611))
         font = QtGui.QFont()
-        font.setPointSize(20)
+        font.setPointSize(24)
         self.tabWidget.setFont(font)
         self.tabWidget.setObjectName("tabWidget")
         self.tab = QtWidgets.QWidget()
         self.tab.setObjectName("tab")
-        self.groupBox = QtWidgets.QGroupBox(self.tab)
-        self.groupBox.setGeometry(QtCore.QRect(30, 180, 571, 561))
-        self.groupBox.setObjectName("groupBox")
+        self.button_yuantu = QtWidgets.QPushButton(self.tab)
+        self.button_yuantu.setGeometry(QtCore.QRect(60, 70, 231, 91))
+        self.button_yuantu.setObjectName("button_yuantu")
+        self.button_loftu = QtWidgets.QPushButton(self.tab)
+        self.button_loftu.setGeometry(QtCore.QRect(60, 210, 231, 91))
+        self.button_loftu.setObjectName("button_loftu")
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QtWidgets.QWidget()
-        font = QtGui.QFont()
-        font.setPointSize(14)
-        self.tab_2.setFont(font)
         self.tab_2.setObjectName("tab_2")
-        self.groupBox_2 = QtWidgets.QGroupBox(self.tab_2)
-        self.groupBox_2.setGeometry(QtCore.QRect(40, 110, 731, 371))
-        self.groupBox_2.setObjectName("groupBox_2")
         self.tabWidget.addTab(self.tab_2, "")
         self.tab_3 = QtWidgets.QWidget()
         self.tab_3.setObjectName("tab_3")
@@ -47,9 +43,9 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.groupBox.setTitle(_translate("Dialog", "GroupBox"))
+        Dialog.setWindowTitle(_translate("Dialog", "窃电分析成果展示"))
+        self.button_yuantu.setText(_translate("Dialog", "原图"))
+        self.button_loftu.setText(_translate("Dialog", "LOF图"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("Dialog", "拉合闸"))
-        self.groupBox_2.setTitle(_translate("Dialog", "GroupBox"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("Dialog", "用电量"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("Dialog", "电压三相"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("Dialog", "三相电压"))
