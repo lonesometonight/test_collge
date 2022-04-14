@@ -4,7 +4,7 @@
 Author: user
 Date: 2022-04-13 23:02:01
 LastEditors: user
-LastEditTime: 2022-04-14 16:00:32
+LastEditTime: 2022-04-14 16:28:14
 Descripttion: 
 '''
 import sys
@@ -21,6 +21,7 @@ import Ui_tu_jiemian
 
 import lahezha as lhz 
 import pandas as pd
+import buPingHengDu as bphd
 
 
 
@@ -34,6 +35,8 @@ class my_lhz(QDialog, Ui_Dialog):
         
         self.button_yuantu.clicked.connect(self.show_yuanshitu)
         self.button_loftu.clicked.connect(self.show_lof_image)
+        
+        self.button_biaoming.clicked.connect(self.show_data_chuli_bph)
         
     def data_chuli(self):
         # 1、读数据
@@ -56,6 +59,13 @@ class my_lhz(QDialog, Ui_Dialog):
         # 5、画出lof图像
         lhz.draw_lof_lahezha(self.after_lof_data)
         # lhz.show_yichang(after_lof_data)
+        
+    ####################################
+    # 不平衡度，相关函数
+    def show_data_chuli_bph(self):
+        get_biaoming=self.lineEdit_biaoming.text()
+        bphd.plot_bphd(biao_name=get_biaoming)
+        
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
